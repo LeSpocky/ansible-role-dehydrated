@@ -32,6 +32,7 @@ vars:
   dehydrated_common_hooks:
     deploy_cert_hook: /usr/bin/systemctl reload nginx
   dehydrated_challenge_type: "http-01"
+  dehydrated_renew_days: 21
   dehydrated_domains:
     - name: example.org
     - name: example.net
