@@ -36,6 +36,7 @@ vars:
   dehydrated_domains:
     - name: example.org
     - name: example.net
+      renew_days: 32
     - name: example.com
       alternate_names:
         - www.example.com
