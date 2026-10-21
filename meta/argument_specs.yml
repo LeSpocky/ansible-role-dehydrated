@@ -1,0 +1,124 @@
+---
+argument_specs:
+  # roles/24367dfa.dehydrated/tasks/main.yml entry point
+  main:
+    short_description: install and configure dehydrated
+    options:
+      dehydrated_version:
+        type: str
+
+      dehydrated_contact_email:
+        type: str
+
+      dehydrated_location:
+        type: str
+
+      dehydrated_binary:
+        type: str
+
+      dehydrated_config_dir:
+        type: str
+
+      dehydrated_base_dir:
+        type: str
+
+      dehydrated_certs_dir:
+        type: str
+
+      dehydrated_wellknown_dir:
+        type: str
+
+      dehydrated_force_update:
+        type: bool
+
+      dehydrated_domains:
+        type: list
+        elements: dict
+        options:
+          name:
+            type: str
+
+          alternate_names:
+            type: list
+            elements: str
+
+          deploy_challenge_hook:
+            type: str
+
+          clean_challenge_hook:
+            type: str
+
+          sync_cert_hook:
+            type: str
+
+          deploy_cert_hook:
+            type: str
+
+          deploy_ocsp_hook:
+            type: str
+
+          unchanged_cert_hook:
+            type: str
+
+          invalid_challenge_hook:
+            type: str
+
+          request_failure_hook:
+            type: str
+
+          generate_csr_hook:
+            type: str
+
+          startup_hook:
+            type: str
+
+          exit_hook:
+            type: str
+
+          challenge_type:
+            type: str
+
+          renew_days:
+            type: int
+
+      dehydrated_common_hooks:
+        type: dict
+        options:
+          deploy_challenge_hook:
+            type: str
+
+          clean_challenge_hook:
+            type: str
+
+          sync_cert_hook:
+            type: str
+
+          deploy_cert_hook:
+            type: str
+
+          deploy_ocsp_hook:
+            type: str
+
+          unchanged_cert_hook:
+            type: str
+
+          invalid_challenge_hook:
+            type: str
+
+          request_failure_hook:
+            type: str
+
+          generate_csr_hook:
+            type: str
+
+          startup_hook:
+            type: str
+
+          exit_hook:
+            type: str
+
+      dehydrated_challenge_type:
+        type: str
+
+      dehydrated_renew_days:
+        type: int
